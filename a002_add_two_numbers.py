@@ -30,8 +30,8 @@ class Solution(object):
         return head.next
 
 if __name__ == "__main__":
-    print "Running --> ", os.path.basename(__file__)
+    print "Running", os.path.basename(__file__),
     l1 = ListNode(2, ListNode(4, ListNode(3)))
     l2 = ListNode(5, ListNode(6, ListNode(4)))
     assert Solution().addTwoNumbers(l1, l2) == ListNode(7, ListNode(0, ListNode(8)))
-    print "Success"
+    print " ---> Success"
