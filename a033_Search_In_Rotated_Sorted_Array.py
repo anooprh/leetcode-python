@@ -1,20 +1,6 @@
 import os
 import bisect
 
-
-def pair(expression):
-    left = ("(", "[", "{")
-    right = (")", "]", "}")
-    brackets = left + right
-    print(brackets)
-    pure = ''
-
-
-    # the part I want to reduce
-    for char in expression:
-        if char in brackets:
-            pure += char
-
 class Solution(object):
     def search(self, nums, target):
         """
@@ -34,7 +20,6 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    pair("abc(,)[]{{}")
     print "Running", os.path.basename(__file__),
     assert Solution().search([4, 5, 6, 7, 0, 1, 2], 6) == 2
     assert Solution().search([4, 5, 6, 7, 0, 1, 2], 9) == -1
