@@ -1,6 +1,5 @@
 import os
 
-# Not Accepted Yet
 
 class Solution(object):
     def longestPalindrome(self, s):
@@ -8,15 +7,34 @@ class Solution(object):
         :type s: str
         :rtype: str
         """
-        table = {}
-        st, en, ans = 0, 0, ""
-        for i, c in enumerate(s):
-            if c not in table:
-                table[c] = i
-            else:
-                if en - st > len(ans): ans = s[st:en + 1]
-                st += 1
-                table[c] = i
+        ans = ""
+        for i in range(len(s)):
+            odd = self.expand_odd(s, i)
+            if len(odd) > len(ans): ans = odd
+
+        for i in range(len(s)-1):
+            even = self.expand_even(s, i)
+            if len(even) > len(ans): ans = even
+
+        return ans
+
+    def expand_odd(self, s, i):
+        st, en = i, i
+        while True:
+            if st == 0 or en == len(s) - 1: break
+            if not s[st - 1] == s[en + 1]: break
+            st -= 1
+            en += 1
+        return s[st:en + 1]
+
+    def expand_even(self, s, i):
+        st, en = i+1, i
+        while True:
+            if st == 0 or en == len(s) - 1: break
+            if not s[st - 1] == s[en + 1]: break
+            st -= 1
+            en += 1
+        return s[st:en + 1]
 
 
 if __name__ == "__main__":

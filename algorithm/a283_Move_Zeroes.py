@@ -14,9 +14,12 @@ class Solution(object):
                 pos += 1
 
         for i in range(pos, len(nums)): nums[i] = 0
+        pass
 
 
 if __name__ == "__main__":
     print "Running", os.path.basename(__file__),
-    assert Solution().moveZeroes([0, 1, 0, 3, 12]) == [1, 3, 12, 0, 0]
+    nums = [0, 1, 0, 3, 12]
+    Solution().moveZeroes(nums)
+    assert nums == [1, 3, 12, 0, 0]
     print " ---> Success"
