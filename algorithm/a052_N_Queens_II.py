@@ -1,4 +1,6 @@
 import copy
+
+import copy
 import os
 
 
@@ -29,7 +31,7 @@ class Solution(object):
                 grid[st][j] = '.'
         return ans
 
-    def solveNQueens(self, n):
+    def totalNQueens(self, n):
         """
         :type n: int
         :rtype: List[List[str]]
@@ -46,10 +48,10 @@ class Solution(object):
                 grid = [['.' for _ in range(n)] for _ in range(n)]
             else:
                 grid[0][i] = '.'
-        return ans
+        return len(ans)
 
 
 if __name__ == "__main__":
     print("Running", os.path.basename(__file__), end=' ')
-    assert Solution().solveNQueens(4) == [[".Q..", "...Q", "Q...", "..Q."], ["..Q.", "Q...", "...Q", ".Q.."]]
+    assert Solution().totalNQueens(4) == 2
     print(" ---> Success")

@@ -11,7 +11,7 @@ class Solution(object):
         t1 = {}
         for num in nums:
             t1[num] = t1[num] + 1 if num in t1 else 1
-        t2 = [[k,v] for (k,v) in zip(t1.keys(), t1.values())]
+        t2 = [(k,v) for (k,v) in zip(t1.keys(), t1.values())]
         t2.sort(key=lambda x: -x[1])
         ans = []
         for i in range(k):
