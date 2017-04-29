@@ -14,7 +14,7 @@ class Solution(object):
         return False
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     assert Solution().containsDuplicate([1,2,3,4]) == False
     assert Solution().containsDuplicate([1,2,3,2]) == True
-    print " ---> Success"
+    print(" ---> Success")

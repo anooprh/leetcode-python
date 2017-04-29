@@ -46,9 +46,9 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     c = ListNode("c1", ListNode("c2", ListNode("c3")))
     l1 = ListNode("a1", ListNode("a2", c))
     l2 = ListNode("b1", ListNode("b2", ListNode("b3", c)))
     assert Solution().getIntersectionNode(l1, l2) == c
-    print " ---> Success"
+    print(" ---> Success")

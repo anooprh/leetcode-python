@@ -14,10 +14,10 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     assert Solution().isPowerOfThree(3) == True
     assert Solution().isPowerOfThree(4) == False
     assert Solution().isPowerOfThree(9) == True
     assert Solution().isPowerOfThree(27) == True
     assert Solution().isPowerOfThree(81) == True
-    print " ---> Success"
+    print(" ---> Success")

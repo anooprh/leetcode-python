@@ -25,11 +25,11 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     node = ListNode(3)
     l1 = ListNode(1, ListNode(2, node))
     node.next = l1
     l2 = ListNode(1,ListNode(2, ListNode(4)))
     assert Solution().hasCycle(l1) == True
     assert Solution().hasCycle(l2) == False
-    print " ---> Success"
+    print(" ---> Success")

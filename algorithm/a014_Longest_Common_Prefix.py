@@ -20,8 +20,8 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     assert Solution().longestCommonPrefix(["abc123", "abd", "ab"]) == "ab"
     assert Solution().longestCommonPrefix(["aa", "a"]) == "a"
     assert Solution().longestCommonPrefix(["flower","flow","flight"]) == "fl"
-    print " ---> Success"
+    print(" ---> Success")

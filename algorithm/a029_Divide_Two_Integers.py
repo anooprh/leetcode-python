@@ -28,11 +28,11 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     assert Solution().divide(12, 6) == 2
     assert Solution().divide(12, 9) == 1
     assert Solution().divide(12, -9) == -1
     assert Solution().divide(-12, 9) == -1
     assert Solution().divide(-1, -1) == 1
     assert Solution().divide(10, 3) == 3
-    print " ---> Success"
+    print(" ---> Success")

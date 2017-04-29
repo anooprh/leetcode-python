@@ -18,7 +18,7 @@ class Solution(object):
         return res
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     assert Solution().generate(5) == [
         [1],
         [1, 1],
@@ -26,4 +26,4 @@ if __name__ == "__main__":
         [1, 3, 3, 1],
         [1, 4, 6, 4, 1]
     ]
-    print " ---> Success"
+    print(" ---> Success")

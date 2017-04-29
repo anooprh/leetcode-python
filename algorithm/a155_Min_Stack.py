@@ -44,7 +44,7 @@ class MinStack(object):
 
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     minStack = MinStack()
     minStack.push(-2)
     minStack.push(0)
@@ -53,4 +53,4 @@ if __name__ == "__main__":
     minStack.pop()
     assert minStack.top() == 0
     assert minStack.getMin() == -2
-    print " ---> Success"
+    print(" ---> Success")

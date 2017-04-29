@@ -16,7 +16,7 @@ class Solution(object):
         return -1
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     assert Solution().firstUniqChar("leetcode") == 0
     assert Solution().firstUniqChar("loveleetcode") == 2
-    print " ---> Success"
+    print(" ---> Success")

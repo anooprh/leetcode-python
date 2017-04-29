@@ -25,8 +25,8 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     assert Solution().change(5, [1, 2, 5]) == 4
     assert Solution().change(3, [2]) == 0
     assert Solution().change(10, [10]) == 1
-    print " ---> Success"
+    print(" ---> Success")

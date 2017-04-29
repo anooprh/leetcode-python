@@ -36,9 +36,9 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
 
     assert check_same(Solution().mergeTwoLists(ListNode(1, ListNode(3, ListNode(5))),
                                                ListNode(2, ListNode(4, ListNode(6)))),
                       ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5, ListNode(6)))))))
-    print " ---> Success"
+    print(" ---> Success")

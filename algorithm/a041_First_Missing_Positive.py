@@ -17,11 +17,11 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     assert Solution().firstMissingPositive([1, 2, 0]) == 3
     assert Solution().firstMissingPositive([3, 4, -1, 1]) == 2
     assert Solution().firstMissingPositive([]) == 1
     assert Solution().firstMissingPositive([3, 2]) == 1
     assert Solution().firstMissingPositive([1000, -1]) == 1
     assert Solution().firstMissingPositive([1000, 1]) == 2
-    print " ---> Success"
+    print(" ---> Success")

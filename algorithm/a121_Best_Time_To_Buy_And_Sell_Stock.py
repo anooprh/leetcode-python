@@ -17,7 +17,7 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     assert Solution().maxProfit([7, 1, 5, 3, 6, 4]) == 5
     assert Solution().maxProfit([7, 6, 4, 3, 1]) == 0
-    print " ---> Success"
+    print(" ---> Success")

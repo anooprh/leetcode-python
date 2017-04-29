@@ -25,9 +25,9 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     assert Solution().detectCapitalUse("abcd") == True
     assert Solution().detectCapitalUse("ABCD") == True
     assert Solution().detectCapitalUse("Abcd") == True
     assert Solution().detectCapitalUse("AbBd") == False
-    print " ---> Success"
+    print(" ---> Success")

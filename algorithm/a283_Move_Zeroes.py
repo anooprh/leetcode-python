@@ -18,8 +18,8 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     nums = [0, 1, 0, 3, 12]
     Solution().moveZeroes(nums)
     assert nums == [1, 3, 12, 0, 0]
-    print " ---> Success"
+    print(" ---> Success")

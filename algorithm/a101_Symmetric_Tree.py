@@ -25,9 +25,9 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     assert Solution().isSymmetric(TreeNode(1, TreeNode(2, TreeNode(3), TreeNode(4)),
                                            TreeNode(2, TreeNode(4), TreeNode(3)))) == True
     assert Solution().isSymmetric(TreeNode(1, TreeNode(2, None, TreeNode(3)),
                                            TreeNode(2, None, TreeNode(3)))) == False
-    print " ---> Success"
+    print(" ---> Success")

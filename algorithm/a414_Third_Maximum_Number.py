@@ -23,8 +23,8 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     assert Solution().thirdMax([3, 2, 1]) == 1
     assert Solution().thirdMax([2, 1]) == 2
     assert Solution().thirdMax([2, 2, 3, 1]) == 1
-    print " ---> Success"
+    print(" ---> Success")

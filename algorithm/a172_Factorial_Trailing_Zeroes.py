@@ -9,14 +9,14 @@ class Solution(object):
         """
         v, ans = 5, 0
 
-        while n / v > 0:
-            ans += n / v
+        while n // v > 0:
+            ans += n // v
             v *= 5
         return ans
 
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     assert Solution().trailingZeroes(1) == 0
     assert Solution().trailingZeroes(5) == 1
     assert Solution().trailingZeroes(10) == 2
@@ -25,4 +25,4 @@ if __name__ == "__main__":
     assert Solution().trailingZeroes(20) == 4
     assert Solution().trailingZeroes(25) == 6
     assert Solution().trailingZeroes(25) == 6
-    print " ---> Success"
+    print(" ---> Success")

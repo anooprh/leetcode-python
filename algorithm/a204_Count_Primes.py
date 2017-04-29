@@ -19,7 +19,7 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     assert Solution().countPrimes(5) == 2
     assert Solution().countPrimes(25) == 9
-    print " ---> Success"
+    print(" ---> Success")

@@ -12,6 +12,6 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     assert Solution().missingNumber([0, 1, 3]) == 2
-    print " ---> Success"
+    print(" ---> Success")

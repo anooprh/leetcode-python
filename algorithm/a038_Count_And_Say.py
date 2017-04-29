@@ -19,10 +19,10 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     assert Solution().countAndSay(1) == "1"
     assert Solution().countAndSay(2) == "11"
     assert Solution().countAndSay(3) == "21"
     assert Solution().countAndSay(4) == "1211"
     assert Solution().countAndSay(5) == "111221"
-    print " ---> Success"
+    print(" ---> Success")

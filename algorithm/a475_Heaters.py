@@ -19,7 +19,7 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     assert Solution().findRadius([1, 2, 3, 4], [1, 4]) == 1
     assert Solution().findRadius([1, 2, 3], [2]) == 1
-    print " ---> Success"
+    print(" ---> Success")

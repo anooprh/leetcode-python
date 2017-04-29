@@ -31,11 +31,11 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     assert Solution().romanToInt("I") == 1
     assert Solution().romanToInt("II") == 2
     assert Solution().romanToInt("IV") == 4
     assert Solution().romanToInt("V") == 5
     assert Solution().romanToInt("VIII") == 8
     assert Solution().romanToInt("IX") == 9
-    print " ---> Success"
+    print(" ---> Success")

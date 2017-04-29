@@ -15,8 +15,8 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     length = Solution().ladderLength("hit", "cog", ["hot", "dot", "dog", "lot", "log", "cog"])
-    print length
+    print(length)
     assert length == 5
-    print " ---> Success"
+    print(" ---> Success")

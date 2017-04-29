@@ -9,6 +9,6 @@ class Solution:
 
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     assert Solution().reverseBits(43261596) == 964176192
-    print " ---> Success"
+    print(" ---> Success")

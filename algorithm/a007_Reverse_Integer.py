@@ -14,7 +14,7 @@ class Solution(object):
             x *= -1
         while x > 0:
             ans = ans * 10 + x % 10
-            x /= 10
+            x //= 10
 
         if positive:
             return ans if ans <= 2147483647 else 0
@@ -23,7 +23,7 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     assert Solution().reverse(123) == 321
     assert Solution().reverse(-123) == -321
-    print " ---> Success"
+    print(" ---> Success")

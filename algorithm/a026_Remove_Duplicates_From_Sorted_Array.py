@@ -17,9 +17,9 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     l1 = [1, 1, 5]
     assert Solution().removeDuplicates(l1) == 2
     assert l1 == [1, 5, 5]
     assert Solution().removeDuplicates([1, 3, 5]) == 3
-    print " ---> Success"
+    print(" ---> Success")

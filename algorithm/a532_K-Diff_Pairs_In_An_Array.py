@@ -17,7 +17,7 @@ class Solution(object):
         """
         ans = 0
         if k == 0:
-            for k, v in collections.Counter(nums).iteritems():
+            for k, v in collections.Counter(nums).items():
                 if v > 1: ans += 1
         elif k > 0:
             nums.sort()
@@ -28,8 +28,8 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     assert Solution().findPairs([3, 1, 4, 1, 5], 2) == 2
     assert Solution().findPairs([1, 2, 3, 4, 5], 1) == 4
     assert Solution().findPairs([1, 3, 1, 5, 4], 0) == 1
-    print " ---> Success"
+    print(" ---> Success")

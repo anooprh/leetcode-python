@@ -20,13 +20,13 @@ class Solution(object):
         while en > st:
             if isBadVersion(en) and (en == st or not isBadVersion(en - 1)): return en
             if isBadVersion(en):
-                en = st + (en - st) / 2
+                en = st + (en - st) // 2
             else:
-                st, en = en, en + (en - st) / 2 + 1
+                st, en = en, en + (en - st) // 2 + 1
 
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     for THRESHOLD in range(1,10):
         assert Solution().firstBadVersion(10) == THRESHOLD
-    print " ---> Success"
+    print(" ---> Success")

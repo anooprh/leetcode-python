@@ -13,6 +13,6 @@ class Solution(object):
         for e in table: return e
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     assert Solution().singleNumber([1,2,3,2,3]) == 1
-    print " ---> Success"
+    print(" ---> Success")

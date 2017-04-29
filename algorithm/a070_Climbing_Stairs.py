@@ -21,9 +21,9 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     assert Solution().climbStairs(1) == 1
     assert Solution().climbStairs(2) == 2
     assert Solution().climbStairs(3) == 3
     assert Solution().climbStairs(4) == 5
-    print " ---> Success"
+    print(" ---> Success")

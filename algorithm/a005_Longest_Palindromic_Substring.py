@@ -38,7 +38,7 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     assert Solution().longestPalindrome("babad") == "bab"
     assert Solution().longestPalindrome("cbbd") == "bb"
-    print " ---> Success"
+    print(" ---> Success")

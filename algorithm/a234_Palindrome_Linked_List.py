@@ -16,8 +16,8 @@ class Solution(object):
         """
         l = self.find_len(head)
         if l <= 1: return True
-        (l1, e1) = self.get_first_part(head, 0, l / 2 - 1)
-        l2 = self.get_second_part(head, l / 2 + 1 if l % 2 == 1 else l / 2, l - 1)
+        (l1, e1) = self.get_first_part(head, 0, l // 2 - 1)
+        l2 = self.get_second_part(head, l // 2 + 1 if l % 2 == 1 else l // 2, l - 1)
         e1.next = None
         return self.check_same(l1, l2)
 
@@ -62,7 +62,7 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     assert Solution().isPalindrome(None) == True
     assert Solution().isPalindrome(ListNode(1, ListNode(2, ListNode(3, ListNode(2, ListNode(1)))))) == True
     assert Solution().isPalindrome(ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(1)))))) == False
@@ -72,4 +72,4 @@ if __name__ == "__main__":
     assert Solution().isPalindrome(
         ListNode(1, ListNode(4, ListNode(-1, ListNode(-1, ListNode(-1, ListNode(4, ListNode(1)))))))) == True
     assert Solution().isPalindrome(ListNode(1, ListNode(2, ListNode(2, ListNode(3))))) == False
-    print " ---> Success"
+    print(" ---> Success")

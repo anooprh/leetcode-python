@@ -1,4 +1,5 @@
 import os
+from functools import reduce
 
 
 class NumArray(object):
@@ -22,9 +23,9 @@ class NumArray(object):
 # param_1 = obj.sumRange(i,j)
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     array = NumArray([-2, 0, 3, -5, 2, -1])
     assert array.sumRange(0, 2) == 1
     assert array.sumRange(2, 5) == -1
     assert array.sumRange(0, 5) == -3
-    print " ---> Success"
+    print(" ---> Success")

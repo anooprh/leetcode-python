@@ -24,8 +24,8 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     assert Solution().rob([1]) == 1
     assert Solution().rob([1, 2, 3]) == 4
     assert Solution().rob([2, 3, 2]) == 4
-    print " ---> Success"
+    print(" ---> Success")

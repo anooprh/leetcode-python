@@ -17,10 +17,10 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     assert Solution().searchRange([5, 7, 7, 8, 8, 10], 8) == [3, 4]
     assert Solution().searchRange([5, 7, 7, 8, 8, 10], 9) == [-1, -1]
     assert Solution().searchRange([], 9) == [-1, -1]
     # Solution().searchRange([5, 7, 7, 8, 8, 10], 10) == [3, 4]
     # Solution().searchRange([5, 7, 7, 8, 8, 10], 9) == [-1, -1]
-    print " ---> Success"
+    print(" ---> Success")

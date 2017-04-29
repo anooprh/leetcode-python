@@ -12,6 +12,6 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     assert Solution().getSum(2, 3) == 5
-    print " ---> Success"
+    print(" ---> Success")

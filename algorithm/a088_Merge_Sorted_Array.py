@@ -25,7 +25,7 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     l1 = [1, 4, 7, None, None, None]
     Solution().merge(l1, 3, [2, 3, 6], 3)
     assert l1 == [1, 2, 3, 4, 6, 7]
@@ -38,4 +38,4 @@ if __name__ == "__main__":
     l1 = [2, 0]
     Solution().merge(l1, 1, [1], 1)
     assert l1 == [1, 2]
-    print " ---> Success"
+    print(" ---> Success")

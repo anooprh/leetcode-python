@@ -22,15 +22,15 @@ class Solution(object):
                 else:
                     cCh[colNum][int(c) - 1] = True
 
-                if dCh[((rowNum / 3) * 3) + colNum / 3][int(c) - 1]:
+                if dCh[((rowNum // 3) * 3) + colNum // 3][int(c) - 1]:
                     return False
                 else:
-                    dCh[((rowNum / 3) * 3) + colNum / 3][int(c) - 1] = True
+                    dCh[((rowNum // 3) * 3) + colNum // 3][int(c) - 1] = True
         return True
 
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     assert Solution().isValidSudoku([
         ["5", "3", ".", ".", "7", ".", ".", ".", "."],
         ["6", ".", ".", "1", "9", "5", ".", ".", "."],
@@ -45,4 +45,4 @@ if __name__ == "__main__":
     assert Solution().isValidSudoku(
         [".87654321", "2........", "3........", "4........", "5........", "6........", "7........", "8........",
          "9........"]) == True
-    print " ---> Success"
+    print(" ---> Success")

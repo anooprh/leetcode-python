@@ -7,7 +7,7 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     assert Solution().fizzBuzz(15) == [
         "1",
         "2",
@@ -25,4 +25,4 @@ if __name__ == "__main__":
         "14",
         "FizzBuzz"
     ]
-    print " ---> Success"
+    print(" ---> Success")

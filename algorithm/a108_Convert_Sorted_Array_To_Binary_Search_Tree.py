@@ -23,7 +23,7 @@ class Solution(object):
         """
         if nums is None or len(nums) == 0: return None
         if len(nums) == 1: return TreeNode(nums[0])
-        mid = len(nums) / 2
+        mid = len(nums) // 2
         t = TreeNode(nums[mid])
         t.left = self.sortedArrayToBST(nums[0:mid])
         t.right = self.sortedArrayToBST(nums[mid + 1:])
@@ -31,7 +31,7 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     assert checkSame(Solution().sortedArrayToBST([1, 2, 3, 4, 5]),
                      TreeNode(3, TreeNode(2, TreeNode(1), None), TreeNode(5, TreeNode(4), None)))
-    print " ---> Success"
+    print(" ---> Success")

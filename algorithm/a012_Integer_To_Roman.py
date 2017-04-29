@@ -15,18 +15,18 @@ class Solution(object):
         }
         v, ans = 1000, ""
         while v > 0:
-            ans += table[v][num / v]
+            ans += table[v][num // v]
             num %= v
-            v /= 10
+            v //= 10
         return ans
 
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     assert Solution().intToRoman(1) == "I"
     assert Solution().intToRoman(2) == "II"
     assert Solution().intToRoman(4) == "IV"
     assert Solution().intToRoman(5) == "V"
     assert Solution().intToRoman(8) == "VIII"
     assert Solution().intToRoman(9) == "IX"
-    print " ---> Success"
+    print(" ---> Success")

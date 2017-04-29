@@ -26,6 +26,6 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     assert Solution().intersect([1, 2, 2, 1], [2, 2]) == [2, 2]
-    print " ---> Success"
+    print(" ---> Success")

@@ -1,3 +1,3 @@
 import sys
 
-print "a" + sys.argv[1].title().replace(".", "").replace(" ", "_")
+print("a" + sys.argv[1].title().replace(".", "").replace(" ", "_"))

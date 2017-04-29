@@ -10,6 +10,6 @@ class Solution(object):
                 m[num] = i
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     assert Solution().twoSum([1, 3, 5], 8) == [1, 2]
-    print " ---> Success"
+    print(" ---> Success")

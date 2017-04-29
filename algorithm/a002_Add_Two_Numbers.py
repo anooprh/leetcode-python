@@ -19,7 +19,7 @@ class Solution(object):
             now = ListNode(0)
             sum = (l1.val if l1 is not None else 0) + (l2.val if l2 is not None else 0) + carry
             now.val = sum % 10
-            carry = sum / 10
+            carry = sum // 10
             prev.next = now
             prev = now
 
@@ -30,8 +30,8 @@ class Solution(object):
         return head.next
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     l1 = ListNode(2, ListNode(4, ListNode(3)))
     l2 = ListNode(5, ListNode(6, ListNode(4)))
     assert Solution().addTwoNumbers(l1, l2) == ListNode(7, ListNode(0, ListNode(8)))
-    print " ---> Success"
+    print(" ---> Success")

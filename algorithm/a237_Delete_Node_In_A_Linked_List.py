@@ -12,13 +12,13 @@ class Solution(object):
         :type node: ListNode
         :rtype: void Do not return anything, modify node in-place instead.
         """
-        while node.next != None:
+        while node.__next__ != None:
             node.val = node.next.val
             prev = node
-            node = node.next
+            node = node.__next__
         prev.next = None
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     # This cannot be tested I believe
-    print " ---> Success"
+    print(" ---> Success")

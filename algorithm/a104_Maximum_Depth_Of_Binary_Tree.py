@@ -18,10 +18,10 @@ class Solution(object):
 
 
 if __name__ == "__main__":
-    print "Running", os.path.basename(__file__),
+    print("Running", os.path.basename(__file__), end=' ')
     root = TreeNode(0)
     root.left = TreeNode(1)
     root.left.right = TreeNode(2)
     assert Solution().maxDepth(root) == 3
     assert Solution().maxDepth(None) == 0
-    print " ---> Success"
+    print(" ---> Success")
