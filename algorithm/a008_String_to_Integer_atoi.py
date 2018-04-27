@@ -13,8 +13,9 @@ class Solution(object):
         n = int(m.group())
         return min(n, 2147483647) if n > 0 else max(n, -2147483648)
 
+
 if __name__ == "__main__":
-    print("Running", os.path.basename(__file__), end=' ')
+    print "Running", os.path.basename(__file__),
     assert Solution().myAtoi('123') == 123
     assert Solution().myAtoi('-123') == -123
-    print(" ---> Success")
+    print " ---> Success"
